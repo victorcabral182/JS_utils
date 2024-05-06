@@ -16,3 +16,6 @@ const base64toBlob = (base64: string): Blob => {
     const blob = base64toBlob(data)
     saveAs(blob, fileName)
   }
+
+
+const url = URL.createObjectURL(blob); <-------------------------- Transformar em URL
